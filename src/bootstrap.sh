@@ -19,6 +19,7 @@ static domain_name_servers=192.168.1.1" >> /etc/dhcpcd.conf
 
 # SSH port
 sed -i.bak s/Port\ 22/Port\ 9875/g /etc/ssh/sshd_config
+sed -i.bak s/\#PasswordAuthentication yes/PasswordAuthentication\ no/ /etc/ssh/sshd_config
 
 # Create deployer user
 adduser --disabled-password deployer
