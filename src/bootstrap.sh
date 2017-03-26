@@ -35,5 +35,5 @@ adduser deployer backyardlights
 # Docker
 curl -sSL get.docker.com | sh
 systemctl enable docker # set to autostart
-sudo usermod -aG docker pi # add pi user to docker group
+usermod -aG docker pi # add pi user to docker group
 
